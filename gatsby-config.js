@@ -4,7 +4,7 @@ require("dotenv").config({
 
 const {
   NODE_ENV,
-  URL: NETLIFY_SITE_URL = "https://beatsandsteps.com", // Note, no trailing slash
+  URL: NETLIFY_SITE_URL = "https://beatsandsteps.com",
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV,
 } = process.env;
@@ -52,7 +52,7 @@ module.exports = {
         apiKey: process.env.GATSBY_CLOUDINARY_API_KEY,
         apiSecret: process.env.GATSBY_CLOUDINARY_API_SECRET,
         uploadFolder: "gatsby-cloudinary",
-        // alwaysUseDefaultBase64: true, // Comment out if going to production!
+        // alwaysUseDefaultBase64: true, 
         enableDefaultTransformations: true,
       },
     },
@@ -88,7 +88,6 @@ module.exports = {
       resolve: `gatsby-source-instagram`,
       options: {
         username: `1503767980`,
-        // This new long-lived access token EXPIRES OCTOBER 19, 2021: AFTER REFRESH DON'T FORGET TO CHANGE NETLIFY ENV VARIABLE
         access_token: process.env.GATSBY_INSTAGRAM_TOKEN,
         instagram_id: process.env.GATSBY_INSTA_BUSINESS_ID,
         paginate: 6,
@@ -104,7 +103,7 @@ module.exports = {
         background_color: `#e8f1f5`,
         theme_color: `#fafafa`,
         display: `minimal-ui`,
-        icon: `src/assets/images/Logos/smallLogo.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/Logos/smallLogo.png`,
       },
     },
   ],
