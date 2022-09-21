@@ -7,7 +7,7 @@ import NavLink from "../components/navigation/NavLink";
 import SEO from "../components/SEO/SEO";
 import classes from "../styles/pages/music.module.scss";
 
-import Vimeo from "../components/vimeo-vid/VimeoVid";
+import YouVideo from "../components/youtube-vid/YoutubeVideo";
 
 export const getImages = graphql`
   {
@@ -55,17 +55,11 @@ const Music = () => {
         <div className={classes.musicBanner}>
           <h1>The Music Program</h1>
           <div className={classes.vimeoBlockContainer}>
-            <h2 className={classes.recitalTitle}>Music Recitals 2020 - 2021</h2>
+            <h2 className={classes.recitalTitle}>7th Musical Showcase</h2>
             <div className={classes.videoContainer}>
-              <Vimeo
-                videoSrcURL="https://player.vimeo.com/video/651871272?h=d67985545c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                videoTitle="Together at 5 (Music Recital 2020)"
-              />
-            </div>
-            <div className={classes.videoContainer}>
-              <Vimeo
-                videoSrcURL="https://player.vimeo.com/video/562009677?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                videoTitle="B&amp;S Music Recital Harmony 2021"
+              <YouVideo
+                videoSrcURL="https://www.youtube.com/embed/ad1_WpDjsEE"
+                videoTitle="B&amp;S 7th Musical Showcase"
               />
             </div>
           </div>

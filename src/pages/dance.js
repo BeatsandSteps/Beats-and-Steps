@@ -7,7 +7,7 @@ import NavLink from "../components/navigation/NavLink";
 import SEO from "../components/SEO/SEO";
 import classes from "../styles/pages/dance.module.scss";
 
-import Vimeo from "../components/vimeo-vid/VimeoVid";
+import YouVideo from "../components/youtube-vid/YoutubeVideo";
 
 export const getImages = graphql`
   {
@@ -48,10 +48,10 @@ const Dance = () => {
         <div className={classes.danceBanner}>
           <h1>The Dance Program</h1>
           <div className={classes.vimeoBlockContainer}>
-            <h2 className={classes.recitalTitle}>Dance Recital 2021</h2>
-            <Vimeo
-              videoSrcURL="https://player.vimeo.com/video/573292800?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              videoTitle="B&amp;S Dance Recital Spotlight On Dance - 2021"
+            <h2 className={classes.recitalTitle}>7th Dance Showcase</h2>
+            <YouVideo
+              videoSrcURL="https://www.youtube.com/embed/bqu0sm1ApIA"
+              videoTitle="B&amp;S 7th Dance Showcase"
             />
           </div>
           <div className={classes.block}>
