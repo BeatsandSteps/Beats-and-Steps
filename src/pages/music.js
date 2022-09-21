@@ -9,8 +9,6 @@ import classes from "../styles/pages/music.module.scss";
 
 import Vimeo from "../components/vimeo-vid/VimeoVid";
 
-import CovidBanner from "../components/covid-banner/covid-banner";
-
 export const getImages = graphql`
   {
     voice: file(relativePath: { eq: "music/voice.jpg" }) {
@@ -53,7 +51,6 @@ const Music = () => {
         title="Music"
         description="Music Department page for Beats &amp; Steps Arts Academy"
       />
-      <CovidBanner />
       <section className={classes.musicContainer}>
         <div className={classes.musicBanner}>
           <h1>The Music Program</h1>

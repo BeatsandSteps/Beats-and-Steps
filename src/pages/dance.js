@@ -9,8 +9,6 @@ import classes from "../styles/pages/dance.module.scss";
 
 import Vimeo from "../components/vimeo-vid/VimeoVid";
 
-import CovidBanner from "../components/covid-banner/covid-banner";
-
 export const getImages = graphql`
   {
     ballet: file(relativePath: { eq: "dance/ballet.jpg" }) {
@@ -46,7 +44,6 @@ const Dance = () => {
         title="Dance"
         description="Dance Department page for Beats &amp; Steps Arts Academy"
       />
-      <CovidBanner />
       <section className={classes.danceContainer}>
         <div className={classes.danceBanner}>
           <h1>The Dance Program</h1>
