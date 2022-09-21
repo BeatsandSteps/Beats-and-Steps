@@ -53,16 +53,6 @@ const Footer = () => {
             </span>{" "}
             Beats &amp; Steps Arts Academy
           </div>
-          <span>
-            Site by{" "}
-            <a
-              href="https://github.com/SignetOHara"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <span className={classes.grey}>A. Friedman</span>
-            </a>
-          </span>
         </div>
       </div>
     </footer>

@@ -8,8 +8,6 @@ import SEO from "../components/SEO/SEO";
 import Form from "../components/my-form/MainForm";
 import classes from "../styles/pages/contact.module.scss";
 
-import CovidBanner from '../components/covid-banner/covid-banner';
-
 const getImages = graphql`
   {
     contact: file(relativePath: { eq: "contact/contact.jpg" }) {
@@ -31,7 +29,6 @@ const Contact = () => {
         title="Contact"
         description="Contact page for Beats &amp; Steps Arts Academy"
       />
-      <CovidBanner />
       <section className={classes.contactContainer}>
         <Img
           className={classes.image}
