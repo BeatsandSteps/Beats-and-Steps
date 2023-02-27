@@ -16,7 +16,7 @@ const IndexPage = () => {
       <Welcome />
       <About />
       {/* <Testimonials /> */}
-      <Instagram />
+      {/* <Instagram /> */}
     </Layout>
   );
 };
