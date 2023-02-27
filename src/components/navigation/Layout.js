@@ -1,8 +1,8 @@
 import React from "react";
 
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 import useViewport from "../../hooks/useViewport";
 import classes from "../../styles/layout/layout.module.scss";
 
@@ -23,12 +23,12 @@ const Layout = ({ children }) => {
       className={classes.layoutContainer}
       style={{ backgroundImage: `url(${bgImage})` }}
     >
-      <Navbar toggleSidebar={toggleSidebar} isOpen={isOpen} />
+      {/* <Navbar toggleSidebar={toggleSidebar} isOpen={isOpen} /> */}
       {width < breakpoint ? (
         <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
       ) : null}
       <main>{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

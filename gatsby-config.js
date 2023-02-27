@@ -84,16 +84,16 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `1503767980`,
-        access_token: process.env.GATSBY_INSTAGRAM_TOKEN,
-        instagram_id: process.env.GATSBY_INSTA_BUSINESS_ID,
-        paginate: 6,
-        maxPosts: 6,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-instagram`,
+    //   options: {
+    //     username: `1503767980`,
+    //     access_token: process.env.GATSBY_INSTAGRAM_TOKEN,
+    //     instagram_id: process.env.GATSBY_INSTA_BUSINESS_ID,
+    //     paginate: 6,
+    //     maxPosts: 6,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
