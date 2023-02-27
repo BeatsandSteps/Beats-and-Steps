@@ -16,7 +16,6 @@ module.exports = {
     title: `Beats and Steps Arts Academy, CMM Affiliate Center`,
     description: `Beats and Steps Arts Academy is a CMM affiliate center that envisions developing children's full potential in the arts.`,
     author: `Alex Friedman`,
-    image: `/logo.png`,
     keywords: `ballet, dance, music, manila, hiphop, jazz, violin, piano, voice, performance, quezon city, contemporary, online classes, online lessons`,
     siteUrl,
   },
@@ -46,29 +45,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-transformer-cloudinary",
-      options: {
-        cloudName: process.env.GATSBY_CLOUDINARY_CLOUD_NAME,
-        apiKey: process.env.GATSBY_CLOUDINARY_API_KEY,
-        apiSecret: process.env.GATSBY_CLOUDINARY_API_SECRET,
-        uploadFolder: "gatsby-cloudinary",
-        // alwaysUseDefaultBase64: true, 
-        enableDefaultTransformations: true,
-      },
-    },
-    {
-      resolve: `gatsby-source-cloudinary`,
-      options: {
-        cloudName: process.env.GATSBY_CLOUDINARY_CLOUD_NAME,
-        apiKey: process.env.GATSBY_CLOUDINARY_API_KEY,
-        apiSecret: process.env.GATSBY_CLOUDINARY_API_SECRET,
-        resourceType: `image`,
-        prefix: `gatsby-cloudinary/faculty`,
-        context: true,
-        maxResults: 20,
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `assets`,
@@ -84,27 +60,5 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `1503767980`,
-        access_token: process.env.GATSBY_INSTAGRAM_TOKEN,
-        instagram_id: process.env.GATSBY_INSTA_BUSINESS_ID,
-        paginate: 6,
-        maxPosts: 6,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Beats and Steps Arts Academy, CMM Affiliate Center`,
-        short_name: `Beats and Steps`,
-        start_url: `/`,
-        background_color: `#e8f1f5`,
-        theme_color: `#fafafa`,
-        display: `minimal-ui`,
-        icon: `src/assets/images/Logos/smallLogo.png`,
-      },
-    },
   ],
 };
